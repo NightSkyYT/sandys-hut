@@ -1,94 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="google-site-verification" content="_25Pop8DUYtF2gbP_GDopWxZUNL7-9cKRCB8pYn34Rs" />
+
 <title>Sandy's Hut</title>
 
 <style>
-body {
-    background-image: url("");
-    font-family: Comic Sans MS, Arial;
-    color: yellow;
-    text-align: center;
+
+body{
+    background-color:black;
+    color:#00ff00;
+    font-family: "Courier New", monospace;
+    margin:0;
 }
 
-.container {
-    background: black;
-    border: 5px ridge lime;
-    width: 800px;
-    margin: auto;
-    padding: 20px;
+header{
+    border-bottom:2px solid #00ff00;
+    padding:15px;
+    text-align:center;
 }
 
-.blink {
-    animation: blink 1s infinite;
+marquee{
+    color:yellow;
 }
 
-@keyframes blink {
-    50% { opacity: 0; }
+.container{
+    width:800px;
+    margin:auto;
+    padding:20px;
 }
 
-a {
-    color: cyan;
+section{
+    border:1px solid #00ff00;
+    padding:15px;
+    margin-bottom:20px;
 }
 
-.counter {
-    font-size: 20px;
-    color: lime;
+h1,h2{
+    color:white;
 }
+
+a{
+    color:cyan;
+}
+
+a:hover{
+    color:yellow;
+}
+
+.images{
+    border:1px dashed #00ff00;
+    padding:10px;
+    text-align:center;
+}
+
+.footer{
+    text-align:center;
+    border-top:2px solid #00ff00;
+    padding:10px;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<marquee scrollamount="10">🔥 WELCOME TO SANDY'S HUT 🔥 BEST VIEWED IN NETSCAPE NAVIGATOR 🔥</marquee>
+<header>
+
+<h1>Sandy's Hut</h1>
+
+<marquee scrollamount="6">
+WELCOME TO SANDY'S HUT • BEST VIEWED ON A CRT MONITOR • EST. 1998
+</marquee>
+
+</header>
 
 <div class="container">
 
-<h1 class="blink">🏝️ Sandy's Hut 🏝️</h1>
+<section>
 
-<p>Welcome to my cool website!!!</p>
-
-<img src="">
-<img src="">
-<img src="">
+<h2>About</h2>
 
 <p>
-This page is all about random stuff I like 😎
+Welcome to my personal corner of the internet.
+This site is where I share random stuff, projects and cool links.
 </p>
 
-<hr>
+</section>
 
-<h2>Links</h2>
+
+<section>
+
+<h2>Navigation</h2>
 
 <p>
-<a href="#">My Guestbook</a><br>
-<a href="#">Cool Games</a><br>
-<a href="#">My Friends</a><br>
-<a href="#">Secret Area 👀</a>
+<a href="#">Home</a><br>
+<a href="#">Projects</a><br>
+<a href="#">Downloads</a><br>
+<a href="#">Guestbook</a><br>
+<a href="#">Links</a>
 </p>
 
-<hr>
+</section>
 
-<h2>Under Construction</h2>
 
-<img src="">
+<section>
 
-<p>This page is still under construction!! Come back later!!</p>
+<h2>Images / GIF Area</h2>
 
-<hr>
+<div class="images">
 
-<div class="counter">
-Visitor Counter: 0001337
+<!--
+Hier kannst du deine Bilder einfügen
+Beispiel:
+
+<img src="mein_gif.gif">
+<img src="dancing.gif">
+
+-->
+
 </div>
 
+</section>
+
+
+<section>
+
+<h2>Status</h2>
+
 <p>
-<img src="">
+This page is currently under construction.
+More content coming soon.
 </p>
+
+</section>
 
 </div>
 
-<marquee direction="right">⭐ Thanks for visiting Sandy's Hut ⭐</marquee>
+<div class="footer">
+
+<p>Visitor Counter: 0001337</p>
+<p>© Sandy's Hut</p>
+
+</div>
 
 </body>
 </html>
