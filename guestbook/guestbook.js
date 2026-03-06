@@ -1,9 +1,11 @@
-const repoOwner = "NightSkyYT"
+const repoOwner = "nightskyyt"
 const repoName = "sandys-hut"
 
 async function loadEntries() {
 
-    const response = await fetch(`https://api.github.com/repos/NightSkyYT/sandys-hut/issues?labels=guestbook`)
+    const url = `https://api.github.com/repos/${nightskyyt}/${sandys-hut}/issues?state=open`
+
+    const response = await fetch(url)
     const issues = await response.json()
 
     const container = document.getElementById("entries")
@@ -11,24 +13,29 @@ async function loadEntries() {
 
     issues.forEach(issue => {
 
-        const div = document.createElement("div")
+        if(issue.labels.some(label => label.name === "guestbook")){
 
-        div.innerHTML =
-        "<b>" + issue.title + "</b><br>" +
-        issue.body + "<br><hr>"
+            const div = document.createElement("div")
 
-        container.appendChild(div)
+            div.innerHTML =
+            "<b>" + issue.title + "</b><br>" +
+            issue.body + "<br><hr>"
+
+            container.appendChild(div)
+
+        }
 
     })
+
 }
 
-function sendMessage() {
+function sendMessage(){
 
     const name = document.getElementById("name").value
     const message = document.getElementById("message").value
 
     const url =
-    `https://github.com/NightSkyYT/sandys-hut/issues/new?labels=guestbook&title=${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`
+    `https://github.com/${nightskyyt}/${sandys-hut}/issues/new?labels=guestbook&title=${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`
 
     window.open(url)
 
