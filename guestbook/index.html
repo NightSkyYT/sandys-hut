@@ -5,7 +5,7 @@
 <title>Guestbook - Sandy's Hut</title>
 </head>
 
-<body background="sandys-hut/pictures/background.gif" text="beige" link="lightgreen" vlink="lightgreen" alink="green">
+<body background="pictures/background.gif" text="beige" link="lightgreen" vlink="lightgreen" alink="green">
 
 <center>
 
@@ -16,7 +16,7 @@
 <br><br>
 
 <marquee>
-SIGN MY GUESTBOOK • SAY HELLO • INTERNET FRIENDS WELCOME
+SIGN MY GUESTBOOK • INTERNET FRIENDS WELCOME • EST. 1998
 </marquee>
 
 <br><br>
@@ -32,22 +32,15 @@ SIGN MY GUESTBOOK • SAY HELLO • INTERNET FRIENDS WELCOME
 
 <br><br>
 
-<form action="guestbook.php" method="post">
-
 Name:<br>
-<input type="text" name="name"><br><br>
-
-Website:<br>
-<input type="text" name="website"><br><br>
+<input id="name"><br><br>
 
 Message:<br>
-<textarea name="message" rows="5" cols="40"></textarea>
+<textarea id="message" rows="5" cols="40"></textarea>
 
 <br><br>
 
-<input type="submit" value="Sign Guestbook">
-
-</form>
+<button onclick="sendMessage()">Sign Guestbook</button>
 
 </font>
 
@@ -63,7 +56,9 @@ Message:<br>
 
 <br><br>
 
-<iframe src="entries.html" width="100%" height="300" style="border:none;"></iframe>
+<div id="entries">
+Loading entries...
+</div>
 
 </font>
 
@@ -84,19 +79,9 @@ Message:<br>
 
 </table>
 
-<br><br>
-
-<font face="Courier New">
-
-Visitor Counter: 00001337
-
-<br><br>
-
-© Sandy's Hut
-
-</font>
-
 </center>
+
+<script src="guestbook.js"></script>
 
 </body>
 
