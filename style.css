@@ -1,0 +1,47 @@
+body {
+    background-image: url("pictures/background.gif");
+    color: beige;
+    font-family: "Courier New", monospace;
+}
+
+/* links */
+a:link {
+    color: lightgreen;
+}
+
+a:visited {
+    color: lightgreen;
+}
+
+a:active {
+    color: green;
+}
+
+/* title */
+.title {
+    font-size: 40px;
+    color: white;
+}
+
+/* marquee */
+.marquee {
+    color: beige;
+}
+
+/* main table */
+.main-table {
+    border: 2px solid white;
+    width: 700px;
+    background-color: black;
+    border-collapse: collapse;
+}
+
+.main-table td {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+/* footer */
+.footer {
+    margin-top: 20px;
+}
