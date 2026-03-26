@@ -25,12 +25,11 @@ a:active {
 
 /* marquee */
 .ticker {
-	background: #1b2452;
 	overflow: hidden;
 	white-space: nowrap;
 	font-size: 18px;
 	font-weight: bold;
-	color: #d4af37;
+	color: white;
 }
 
 .ticker span {
