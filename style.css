@@ -27,6 +27,7 @@ a:active {
 .ticker {
 	overflow: hidden;
 	white-space: nowrap;
+    font: bold;
 	color: beige;
 }
 
