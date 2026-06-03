@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen – Mindful Productivity Space</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#7f5af0">
+
+<!-- iOS Support -->
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+</head>
+<body>
+
+  <div class="halo"></div>
+
+  <header class="nav-wrap">
+    <nav id="nav">
+      <div class="brand">
+        <div class="brand-mark"><div class="brand-mark-inner">Lu</div></div>
+        <div class="brand-text">
+          <div class="brand-name">Lumen</div>
+          <div class="brand-tagline">Mindful Productivity Space</div>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="#features">Funktionen</a>
+        <a href="#routine">Routine</a>
+        <a href="#stimmen">Stimmen</a>
+      </div>
+
+      <div class="nav-cta">
+        <div class="pill"><span class="pill-dot"></span>Live Fokusraum</div>
+        <button class="btn-primary" onclick="scrollToId('cta')">Jetzt beitreten <span class="icon">↗</span></button>
+      </div>
+
+      <button class="nav-toggle" onclick="toggleNav()"><span></span></button>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <!-- HERO -->
+    <section id="top">
+      <div class="section-inner hero">
+        <div class="hero-left reveal">
+          <div class="hero-kicker"><span class="badge">Neu</span> Ein digitaler Raum für tiefe Konzentration</div>
+          <h1 class="hero-title">Arbeite weniger zerstreut.<br><span class="highlight">Fühle dich präsenter.</span></h1>
+          <p class="hero-subtitle">Lumen kombiniert Fokus‑Sessions, Mikro‑Pausen und sanfte Reflexion…</p>
+
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="scrollToId('cta')">Kostenlose Session starten <span class="icon">●</span></button>
+            <button class="btn-ghost" onclick="scrollToId('features')">Oberfläche ansehen <span class="icon">↓</span></button>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <!-- (Karte wie vorher, gekürzt für Übersicht) -->
+              <div class="hero-card-header">
+                <div class="hero-card-title">
+                  <span class="label">Aktuelle Session</span>
+                  <span class="main">Deep Work – Morgenblock</span>
+                </div>
+                <div class="hero-card-focus"><span class="hero-card-focus-dot"></span>Fokus aktiv</div>
+              </div>
+              <div class="hero-card-body">
+                <!-- Timeline + Metrics -->
+              </div>
+              <div class="hero-card-footer">
+                <span>„Nur eine Session“‑Modus aktiv</span>
+                <span class="badge-soft">Kein Feed. Kein Lärm.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="section-inner reveal">
+        <div class="section-label">Funktionen</div>
+        <h2 class="section-title">Weniger Features. Mehr Bewusstsein.</h2>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+<article class="feature-card">
+  <div class="feature-icon">⏱</div>
+  <h3 class="feature-title">Geführte Fokusblöcke</h3>
+  <p class="feature-text">
+    Starte strukturierte 50‑Minuten‑Blöcke mit klarer Intention, sanften Audio‑Prompts und einem sichtbaren
+    „Nur diese eine Aufgabe“‑Statement.
+  </p>
+  <div class="feature-meta">
+    <span class="feature-tag">Ritual</span>
+    <span>Empfohlen: 2 Blöcke pro Tag</span>
+  </div>
+</article>
+
+<!-- Feature 2 -->
+<article class="feature-card">
+  <div class="feature-icon">🌫</div>
+  <h3 class="feature-title">Mikro‑Pausen</h3>
+  <p class="feature-text">
+    Kurze, geführte Pausen von 3–5 Minuten, die dich nicht aus dem Flow reißen, sondern dein Nervensystem
+    kurz landen lassen.
+  </p>
+  <div class="feature-meta">
+    <span class="feature-tag">Regulation</span>
+    <span>Atmung, Blick, Körper</span>
+  </div>
+</article>
+
+<!-- Feature 3 -->
+<article class="feature-card">
+  <div class="feature-icon">📝</div>
+  <h3 class="feature-title">90‑Sekunden‑Reflexion</h3>
+  <p class="feature-text">
+    Drei Fragen am Ende des Tages, die dir helfen, Wichtiges von Dringendem zu unterscheiden – ohne
+    Tagebuch‑Overkill.
+  </p>
+  <div class="feature-meta">
+    <span class="feature-tag">Reflexion</span>
+    <span>Abends, 1x täglich</span>
+  </div>
+</article>
+
+<!-- Feature 4 -->
+<article class="feature-card">
+  <div class="feature-icon">🔕</div>
+  <h3 class="feature-title">Ablenkungs‑Schleuse</h3>
+  <p class="feature-text">
+    Notiere spontane Gedanken in einer „Schleuse“, statt sie sofort zu erledigen – dein Fokus bleibt, deine
+    Ideen gehen nicht verloren.
+  </p>
+  <div class="feature-meta">
+    <span class="feature-tag">Klarheit</span>
+    <span>Inbox für später</span>
+  </div>
+</article>
+
+<!-- Feature 5 -->
+<article class="feature-card">
+  <div class="feature-icon">🎧</div>
+  <h3 class="feature-title">Leise Soundscapes</h3>
+  <p class="feature-text">
+    Dezent abgestimmte Klangwelten, die nicht „spannend“, sondern stabil sind – damit dein Gehirn nicht
+    ständig nach Neuem sucht.
+  </p>
+  <div class="feature-meta">
+    <span class="feature-tag">Umgebung</span>
+    <span>Studio, Regen, Raum</span>
+  </div>
+</article>
+
+<!-- Feature 6 -->
+<article class="feature-card">
+  <div class="feature-icon">📊</div>
+  <h3 class="feature-title">Sanfte Metriken</h3>
+  <p class="feature-text">
+    Fokus‑Score, Ablenkungs‑Momente und Energie‑Kurve – genug, um Muster zu erkennen, ohne dich in Zahlen zu
+    verlieren.
+  </p>
+  <div class="feature-meta">
+    <span class="feature-tag">Feedback</span>
+    <span>Trend statt Druck</span>
+  </div>
+</article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ROUTINE -->
+    <section id="routine">
+      <div class="section-inner reveal">
+        <div class="section-label">Routine</div>
+        <h2 class="section-title">Eine Morgenroutine, die nicht überfordert.</h2>
+
+        <div class="routine-layout">
+          <!-- Steps + Aside -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="stimmen">
+      <div class="section-inner reveal">
+        <div class="section-label">Stimmen</div>
+        <h2 class="section-title">„Es fühlt sich an wie ein ruhiger Raum…“</h2>
+
+        <div class="testimonials-grid">
+          <!-- Cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="section-inner reveal">
+        <div class="cta">
+          <div class="cta-inner">
+            <div>
+              <div class="section-label">Start</div>
+              <h2 class="cta-title">Teste Lumen mit einer einzigen Session.</h2>
+
+              <form class="cta-form" onsubmit="event.preventDefault(); fakeSubmit();">
+                <div class="input-wrap">
+                  <input type="email" id="email" placeholder="E‑Mail für deinen Session‑Link" required />
+                  <span class="icon">✉</span>
+                </div>
+                <button class="btn-primary" type="submit">Session‑Link senden <span class="icon">→</span></button>
+              </form>
+
+              <div class="cta-note" id="cta-note">Wir schicken dir einen einmaligen Link…</div>
+            </div>
+
+            <div class="cta-side">
+              <!-- Stats -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Lumen</span>
+      <div class="footer-links">
+        <a href="#top">Nach oben</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js");
+  }
+</script>
+
+</body>
+</html>
