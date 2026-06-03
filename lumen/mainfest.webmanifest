@@ -2,7 +2,7 @@
   "name": "Lumen – Mindful Productivity Space",
   "short_name": "Lumen",
   "description": "Ein ruhiger, achtsamer Fokusraum für Deep Work, Pausen und Reflexion.",
-  "start_url": "/",
+  "start_url": "/lumen/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#050816",
